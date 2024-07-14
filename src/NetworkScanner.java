@@ -1,12 +1,14 @@
-import java.net.*;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
 
 public class NetworkScanner {
 
-    public byte findMacAddress(){
+    public String findMacAddress(){
 
 
-
-        return 1;
+        return "00:00:00:00:00:00";
     }
-
 }
+
