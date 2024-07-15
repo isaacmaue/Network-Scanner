@@ -3,10 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        System.out.println("Enter some input");
         InputHandler scanner = new InputHandler();
-        scanner.getUserInput();
-        System.out.println(scanner.getInput());
-
-
+        System.out.println(scanner.getUserInput());
     }
 }

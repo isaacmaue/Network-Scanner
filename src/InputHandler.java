@@ -2,28 +2,31 @@ import java.util.Scanner;
 
 
 public class InputHandler {
-    private Scanner inputScanner = new Scanner(System.in);
-    private String input;
+    private Scanner inputScanner;
 
-    public void getUserInput(){
+
+    public InputHandler() {
+        this.inputScanner = new Scanner(System.in);
+    }
+
+
+    public String getUserInput() {
+        String input = null;
         try {
             while (true) {
-                this.input = inputScanner.nextLine();
+                input = inputScanner.nextLine();
                 if (input.isEmpty()) {
                     System.out.println("You didn't enter anything. Try again");
                     continue;
                 }
                 break;
             }
-        }
-        catch (Exception e) {
+
+        } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
-
-    }
-
-    public String getInput() {
         return input;
-    }
 
+    }
 }
+
