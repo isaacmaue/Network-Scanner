@@ -1,27 +1,24 @@
 import java.lang.ProcessBuilder;
 import java.io.*;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+
+
 
 public class OSCommand {
 
+    private String sudo;
     private String command;
     private String option;
-    private String targetHost;
+    private String subnet;
 
-    public OSCommand(String command, String option, String targetHost) {
-        this.command = command;
-        this.option = option;
-        this.targetHost = targetHost;
+    public OSCommand() {
+        this.sudo = "sudo";
+        this.command = "nmap";
+        this.option = "-sn";
+        this.subnet = "192.168.1.0/24";
     }
 
-    public void setCommand(String command) {
-        this.command = command;
-    }
-
-    public void setOption(String option) {
-        this.option = option;
-    }
-
-    public void setTargetHost(String targetHost) {
-        this.targetHost = targetHost;
-    }
+    //Implement the nmap command
+    public
 }
