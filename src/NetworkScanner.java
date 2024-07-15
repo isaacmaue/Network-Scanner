@@ -1,7 +1,10 @@
-import java.io.*;
-import java.util.*;
-import java.lang.*;
 
+
+
+//This class will use objects from the OSCommand and NetworkDevice classes
+//I need to figure out how to handle the password management for the sudo command in terminal. Forgot about that..
+//OSCommands will have two commands: nmap -sn {subnet}
+//NetworkDevice will create MAC address objects.
 
 public class NetworkScanner {
 

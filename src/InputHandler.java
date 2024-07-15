@@ -10,6 +10,7 @@ public class InputHandler {
     }
 
 
+    //Maybe go back and add more edge cases for input handling - think about it
     public String getUserInput() {
         String input = null;
         try {
@@ -26,7 +27,11 @@ public class InputHandler {
             System.out.println("Error: " + e.getMessage());
         }
         return input;
-
     }
+
+    //Method to format the user's input to use for the actual linux command.
+    //This depends on the ProcessBuilder class I think
+    //Wait wait wait, why did I even make this class? I wanted to use pre-defined linux commands; nmap and ip Route
+    //I'll keep it incase I decide to add more commands I guess
 }
 
